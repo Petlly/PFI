@@ -1,0 +1,310 @@
+body{
+    background-color: lightslategray;
+}
+#grid{
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+        "Header Header Header Header"
+        "Aside Aside Aside Aside"
+        "Main Main Main Main"
+        "footer footer footer footer"
+    ;
+}
+header{
+    grid-area: Header;
+    background-color: black;
+}
+
+#rain{
+    max-width: 60px;
+    padding-left: 10px;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+aside{
+    grid-area: Aside;
+    background-color: white;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 30px;
+    font-style: italic;
+}
+
+a{
+    color: black;
+    padding: 20px;
+}
+
+div aside nav a:hover{
+    color: blue;
+}
+
+#MainGrid{
+    grid-area: Main;
+    display: grid;
+    background-color: white;
+    grid-template-columns:auto repeat(5,1fr);
+    grid-template-rows: auto repeat(12,1fr);
+    grid-template-areas: 
+    
+    "Ligne Ligne Ligne Ligne Ligne Ligne"
+    "hours Ligne2 Ligne2 Ligne2 Ligne2 Ligne2"
+    "hours Ligne3 Ligne3 Ligne3 Ligne3 Ligne3"
+    "hours Ligne4 Ligne4 Ligne4 Ligne4 Ligne4"
+    "hours Ligne5 Ligne5 Ligne5 Ligne5 Ligne5"
+    "hours Ligne6 Ligne6 Ligne6 Ligne6 Ligne6"
+    "hours Ligne7 Ligne7 Ligne7 Ligne7 Ligne7"
+    "hours Ligne8 Ligne8 Ligne8 Ligne8 Ligne8"
+    "hours Ligne9 Ligne9 Ligne9 Ligne9 Ligne9"
+    "hours Ligne10 Ligne10 Ligne10 Ligne10 Ligne10"
+    "hours Ligne11 Ligne11 Ligne11 Ligne11 Ligne11"
+    "hours Ligne12 Ligne12 Ligne12 Ligne12 Ligne12"
+    "Text1 Text1 Text1 Text2 Text2 Text2"
+
+    
+    ;
+}
+
+
+
+#Row1{
+    grid-area: Ligne;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#hours{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    grid-area: hours;
+    justify-content: space-around;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+#hours div{
+    border-top: 1px solid black ;
+    border-bottom: 1px solid black ;
+}
+
+#Row2{
+    grid-area: Ligne2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#Row3{
+    grid-area: Ligne3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#Row4{
+grid-area: Ligne4;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+text-align: center;
+border: 2px solid black;
+}
+
+#Row5{
+    grid-area: Ligne5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#Row6{
+    grid-area: Ligne6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#Row7{
+    grid-area: Ligne7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    border: 2px solid black; 
+}
+
+#Row8{
+    grid-area: Ligne8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    border: 2px solid black; 
+}
+
+#Row9{
+    grid-area: Ligne9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    border: 2px solid black;  
+}
+
+#Row10{
+    grid-area: Ligne10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    border: 2px solid black;  
+}
+
+#Row11{
+    grid-area: Ligne11;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    border: 2px solid black;  
+}
+
+#Row12{
+    grid-area: Ligne12;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    border: 2px solid black;  
+}
+
+#Text1{
+    padding: 5px;
+    grid-area: Text1;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;  
+
+}
+
+#Text2{
+    padding: 5px;
+    grid-area: Text2;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;  
+
+}
+
+img{
+    max-width: 100px;
+}
+footer{
+    border-top: 2px solid black;
+    grid-area: footer;
+    background-color: lightyellow;
+}
+
+footer a:hover{
+    color: blue;
+}
+
+footer p{
+    font-size: 17px;
+}
+
+.Red{
+    background-color: lightcoral;
+}
+
+.Blue{
+    background-color: lightblue;
+}
+
+.Green{
+    background-color: lightgreen;
+}
+
+.Orange{
+    background-color: lightsalmon;
+}
+
+.Pink{
+    background-color: lightpink;
+}
+
+.Purple{
+    background-color: purple;
+}
+
+.ital{
+    font-style: italic;
+    margin: 0.5em 0.5em 0 0.5em;
+    padding: 0 1em ;
+
+}
+   
+.bold{
+    font: bolder;
+    margin: 0 2em;
+    padding: 0 1em ;
+}
+
+.fix{
+    margin: 0 2em;
+    padding: 0 1em ;
+}
+
+@media all and (max-width: 1080px){
+    #grid{
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas: 
+            "Header"
+            "Aside"
+            "Main"
+            "footer"
+        ;
+    }
+
+    h1{
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        font-style: italic;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 30px;
+        font-style: italic;
+    }
+}

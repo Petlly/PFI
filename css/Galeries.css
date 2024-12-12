@@ -1,0 +1,163 @@
+body{
+    background-color: lightslategray;
+}
+
+#grid{
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+        "Header Header Header Header"
+        "Aside Aside Aside Aside"
+        "Main Main Main Main"
+        "footer footer footer footer"
+    ;
+}
+
+header{
+    grid-area: Header;
+    background-color: black;
+}
+
+#rain{
+    max-width: 60px;
+    padding-left: 10px;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+aside{
+    grid-area: Aside;
+    background-color: white;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 30px;
+    font-style: italic;
+}
+
+a{
+    color: black;
+    padding: 20px;
+}
+
+div aside nav a:hover{
+    color: blue;
+}
+
+main{
+    grid-area: Main;
+background-color: white;
+}
+
+div main div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div main div figure img{
+    max-width: 200px;
+    height: 200px;
+    padding: 10px;
+    opacity: 0.5;
+}
+
+div main div figure img:hover{
+    opacity: 1;
+}
+
+div main div figure{
+    border: 2px solid black;
+    border-radius: 10px;
+    max-width: fit-content;
+    opacity: 0.5;
+}
+
+div main div figure:hover{
+    opacity: 1;
+}
+
+#Fuku{
+    width: 150px;
+}
+
+#Yuji{
+    width: 150px;
+}
+
+#flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+figcaption{
+    text-align: center;
+}
+
+footer{
+    border-top: 2px solid black;
+    grid-area: footer;
+    background-color: lightyellow;
+}
+
+footer a:hover{
+    color: blue;
+}
+
+footer p{
+    font-size: 17px;
+}
+
+@media screen and (max-width: 1080px){
+    #grid{
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas: 
+            "Header"
+            "Aside"
+            "Main"
+            "footer"
+        ;
+    }
+
+    h1{
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        font-style: italic;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 30px;
+        font-style: italic;
+    }
+
+    div main div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+}

@@ -1,0 +1,287 @@
+body{
+    background-color: lightslategray;
+}
+
+#grid{
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: 
+        "Header Header Header Header"
+        "Aside Aside Aside Aside"
+        "Main Main Main Main"
+        "footer footer footer footer"
+    ;
+}
+
+header{
+    grid-area: Header;
+    background-color: black;
+}
+
+#rain{
+    max-width: 60px;
+    padding-left: 10px;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+aside{
+    grid-area: Aside;
+    background-color: white;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 30px;
+    font-style: italic;
+}
+
+a{
+    color: black;
+    padding: 20px;
+}
+
+div aside nav a:hover{
+    color: blue;
+}
+
+main{
+    
+    background-color: white;
+    grid-area: Main;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 
+    
+
+
+    "Job Info"
+    "Job1 Info1"
+    "Job2 Info2"
+    "Job3 Info3"
+    "Job4 Info4"
+    "Job5 Info5"    
+    
+    ;
+}
+
+main :nth-child(1)
+{
+    background-color: darkgray;
+}
+
+main :nth-child(2)
+{
+    background-color: darkgray;
+}
+
+main :nth-child(5)
+{
+    background-color: darkgray;
+}
+
+main :nth-child(6)
+{
+    background-color: darkgray;
+}
+
+main :nth-child(9)
+{
+    background-color: darkgray;
+}
+
+main :nth-child(10)
+{
+    background-color: darkgray;
+}
+
+#Job{
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: Job;
+}
+
+#Description{
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: Info;
+}
+
+#Job1{
+    border-bottom: 2px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: Job1;
+
+}
+
+#Info1{
+    border-bottom: 2px solid black;
+    border-radius: 30px;
+    padding-right:10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: Info1;
+}
+
+#Job2{
+    border-bottom: 2px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: Job2;
+}
+
+#Info2{
+    border-bottom: 2px solid black;
+    border-radius: 30px;
+    padding-right:10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: Info2;
+}
+
+#Job3{
+    border-bottom: 2px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: Job3;
+}
+
+#Info3{
+    border-bottom: 2px solid black;
+    border-radius: 30px;
+    padding-right:10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: Info3;
+}
+
+#Job4{
+    border-bottom: 2px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: Job4;
+}
+
+#Info4{
+    border-bottom: 2px solid black;
+    border-radius: 30px;
+    padding-right:10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: Info4;
+}
+
+#Job5{
+    border-bottom: 2px solid black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: Job5;
+}
+
+#Info5{
+    border-bottom: 2px solid black;
+    border-radius: 30px;
+    padding-right:10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: Info5;
+}
+
+footer{
+    border-top: 2px solid black;
+    grid-area: footer;
+    background-color: lightyellow;
+}
+
+footer a:hover{
+    color: blue;
+}
+
+footer p{
+    font-size: 17px;
+}
+
+@media all and (max-width: 1080px){
+    #grid{
+        max-width: 100%;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas: 
+            "Header"
+            "Aside"
+            "Main"
+            "footer"
+        ;
+    }
+
+    h1{
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        font-style: italic;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 30px;
+        font-style: italic;
+    }
+
+
+
+}
